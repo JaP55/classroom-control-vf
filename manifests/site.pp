@@ -40,7 +40,7 @@ ini_setting { 'random ordering':
 
 node default {
   # This is where you can declare classes for all nodes.
-  # Example 12345:
+  # Example 12345 One more time:
   #   class { 'my_class': }
   notify { "Hello, my name is ${::hostname}": }
 }
