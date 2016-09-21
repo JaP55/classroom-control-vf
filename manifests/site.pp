@@ -48,6 +48,7 @@ node default {
     create => '/etc/motd', 
     }
   include users
+  include skeleton
   }
 
 
