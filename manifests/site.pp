@@ -48,4 +48,4 @@ node default {
     create => '/etc/motd', }
   }
 
-include Class['site::users::manifests::example']
+include users::site::users::manifests::example
