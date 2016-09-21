@@ -43,7 +43,7 @@ node default {
   # Example changed one more time:
   #   class { 'my_class': }
   notify { "Hello, my name is ${::hostname}": }
-  file { "/etc/motd": }
-  content { "Hello World Testing":}
+  file { "/etc/motd": 
+  content => "Hello World Testing",}
   }
 
