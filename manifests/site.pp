@@ -46,6 +46,7 @@ node default {
   exec { "cowsay 'Welcome to ${::fqdn}!'> /etc/motd": 
     path => '/usr/local/bin',
     create => '/etc/motd', }
+  include users
   }
 
-include users::site::users::manifests::example
+
