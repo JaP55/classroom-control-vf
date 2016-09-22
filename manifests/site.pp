@@ -47,8 +47,7 @@ node default {
     path => '/usr/local/bin/cowsay',
     create => '/etc/motd', 
     }
-  include users
-  include skeleton
+  
   }
 
 
