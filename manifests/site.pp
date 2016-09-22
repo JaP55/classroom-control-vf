@@ -46,7 +46,7 @@ node default {
     path => '/usr/local/bin/',
     creates => '/etc/motd', 
     }
-  include niginx
+  include nginx
   }
 
 
