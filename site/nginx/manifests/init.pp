@@ -21,7 +21,7 @@ class nginx {
     source => 'puppet:///modules/nginx/default.conf',
     require => Package['nginx'],
     }
-  file { 'index.html':
+  file { '/var/www/index.html':
     ensure => file,
     path => '/var/www/index.html',
     source => 'puppet:///modules/nginx/index.html',
