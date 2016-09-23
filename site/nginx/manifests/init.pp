@@ -24,7 +24,11 @@ class nginx {
   file { '/var/www/index.html':
     ensure => file,
     path => '/var/www/index.html',
+    owner => 'root',
+    group => 'root',
+    mode  => '0664',
     source => 'puppet:///modules/nginx/index.html',
+    require => Package['nginx'],
     }
   service {'ngnix':
     ensure => running,
