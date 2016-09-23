@@ -6,7 +6,7 @@ class nginx {
   file {'/etc/nginx/nginx.conf':
     ensure => file,
     path => '/etc/nginx/nginx.conf',
-    onwer => 'root',
+    owner => 'root',
     group => 'root',
     mode  => '0664',
     source => 'puppet:///modules/nginx/files/nginx.conf',
@@ -15,7 +15,7 @@ class nginx {
   file {'/etc/nginx/conf.d/default.conf':
     ensure => file,
     path => '/etc/nginx/conf.d/default.conf',
-    onwer => 'root',
+    owner => 'root',
     group => 'root',
     mode  => '0664',
     source => 'puppet:///modules/nginx/files/default.conf',
